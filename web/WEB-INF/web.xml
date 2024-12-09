@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
-<!--        <filter>
+    <!--        <filter>
         <filter-name>RouteFilter</filter-name>
         <filter-class>Filter.RouteFilter</filter-class>
     </filter>
@@ -80,6 +80,10 @@
         <servlet-name>DeleteBlogController</servlet-name>
         <servlet-class>Controller.DeleteBlogController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>User_TeamController</servlet-name>
+        <servlet-class>Controller.User_TeamController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AuthenticateController</servlet-name>
         <url-pattern>/auth</url-pattern>
@@ -151,5 +155,9 @@
     <servlet-mapping>
         <servlet-name>DeleteBlogController</servlet-name>
         <url-pattern>/DeleteBlogController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>User_TeamController</servlet-name>
+        <url-pattern>/User_TeamController</url-pattern>
     </servlet-mapping>
 </web-app>
